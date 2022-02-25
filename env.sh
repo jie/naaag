@@ -1,0 +1,7 @@
+export SD_REDIS_HOST="127.0.0.1"
+export SD_REDIS_PORT="6379"
+export SD_REDIS_DB="1"
+export SD_SYS_HOST="localhost:9090"
+export SD_SYS_ENV="dev"
+export SD_NGINX_PATH="/opt/homebrew/etc/nginx"
+export SD_NGINX_CONF="servers"
