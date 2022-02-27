@@ -137,7 +137,11 @@ class APIHandler(BaseAPIHandler):
                 return False, "%s_required" % item
         return True, "ok"
 
-    def post(self):
+    def parse_url_args(self, args, kwargs):
+        pass
+
+    def post(self, *args, **kwargs):
+        self.parse_url_args(args, kwargs)
         params = self.parse_params()
         result, message = self.validate_required_params(params)
         if result is False:

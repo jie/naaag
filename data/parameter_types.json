@@ -1,0 +1,21 @@
+[{
+    "key": "number",
+    "_cls": "ParameterType",
+    "is_enable": true
+  },
+  {
+    "key": "string",
+    "_cls": "ParameterType",
+    "is_enable": true
+  },
+  {
+    "key": "boolean",
+    "_cls": "ParameterType",
+    "is_enable": true
+  },
+  {
+    "key": "options",
+    "_cls": "ParameterType",
+    "is_enable": true
+  }
+]

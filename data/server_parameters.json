@@ -1,0 +1,163 @@
+[{
+    "key": "listen",
+    "_cls": "ServerParameter",
+    "is_enable": true,
+    "required": true
+  },
+  {
+    "key": "server_name",
+    "_cls": "ServerParameter",
+    "is_enable": true,
+    "required": true
+  },
+  {
+    "key": "ssl",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "ssl_certificate_key",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "ssl_certificate",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "ssl_session_cache",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "ssl_session_timeout",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "ssl_ciphers",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "ssl_protocols",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "default_type",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "client_max_body_size",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "keepalive_timeout",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_min_length",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_buffers",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_comp_level",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_types",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_vary",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_vary",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "proxy_headers_hash_max_size",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "proxy_headers_hash_bucket_size",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "include",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "error_page",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "proxy_intercept_errors",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "log_format",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "access_log",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "error_log",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "error_page",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "location",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "rewrite",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "root",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  },
+  {
+    "key": "index",
+    "_cls": "ServerParameter",
+    "is_enable": true
+  }
+]

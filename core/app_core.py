@@ -40,7 +40,17 @@ class AppCore(object):
         self.application.settings["configs"] = self.config
         if self.getSetting("REDIS_HOST"):
             self.application.settings['redis'] = self.config.redis
-    
+        if self.getSetting("MONGO_HOST"):
+            self.init_database()
+
+    def init_database(self):        
+        from mongoengine import connect
+        host = self.getSetting("MONGO_HOST")
+        alias = self.getSetting("MONGO_ALIAS")
+        dbs = {}
+        dbs[alias] = connect(alias=alias, host=host)
+        self.application.settings['dbs'] = dbs
+
     def drop_services(self):
         pass
 

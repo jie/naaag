@@ -1,0 +1,71 @@
+[{
+    "key": "keepalive_timeout",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_min_length",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_buffers",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_comp_level",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_types",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_vary",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "gzip_vary",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "include",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "log_format",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "access_log",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "error_log",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "root",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+  {
+    "key": "index",
+    "_cls": "HttpParameter",
+    "is_enable": true
+  },
+]

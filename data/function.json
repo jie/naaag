@@ -1,0 +1,173 @@
+[{
+    "category": "location",
+    "name": "define_api_group",
+    "_cls": "Function",
+    "is_enable": true,
+    "keys": [{
+      "key": "access_log"
+    }, {
+      "key": "auth_request"
+    }, {
+      "key": "proxy_pass"
+    }, {
+      "key": "children"
+    }, {
+      "key": "return",
+      "value": "404"
+    }]
+  },
+  {
+    "category": "location",
+    "name": "define_api_location",
+    "_cls": "Function",
+    "is_enable": true,
+    "keys": [{
+      "key": "access_log"
+    }, {
+      "key": "auth_request"
+    }, {
+      "key": "proxy_pass"
+    }]
+  },
+  {
+    "category": "location",
+    "name": "define_api_rewrite",
+    "_cls": "Function",
+    "is_enable": true,
+    "keys": [{
+      "key": "access_log"
+    }, {
+      "key": "auth_request"
+    }, {
+      "key": "rewrite"
+    }]
+  },
+  {
+    "category": "location",
+    "name": "define_proxy_api",
+    "_cls": "Function",
+    "is_enable": true,
+    "keys": [{
+        "key": "proxy_set_header",
+        "value": "X-Forwarded-For $proxy_add_x_forwarded_for"
+      },
+      {
+        "key": "proxy_set_header",
+        "value": "X-Forwarded-Proto https"
+      },
+      {
+        "key": "proxy_set_header",
+        "value": "Host $http_host"
+      },
+      {
+        "key": "proxy_redirect",
+        "value": "off"
+      },
+      {
+        "key": "proxy_pass",
+        "value": "##proxy_url##",
+        "variables": [{
+          "key": "proxy_url"
+        }]
+      },
+      {
+        "key": "proxy_http_version",
+        "value": "1.1"
+      },
+      {
+        "key": "proxy_set_header",
+        "value": "Upgrade $http_upgrade"
+      },
+      {
+        "key": "proxy_set_header",
+        "value": "Connection \"upgrade\""
+      },
+      {
+        "key": "proxy_set_header",
+        "value": "X-real-ip $remote_addr"
+      },
+      {
+        "key": "proxy_set_header",
+        "value": "Content-Length \"\""
+      }
+    ]
+  },
+  {
+    "category": "upstream",
+    "name": "define_api_backend",
+    "_cls": "Function",
+    "is_enable": true,
+    "keys": [{
+        "key": "zone",
+        "value": "##zone_name## ##size=1024##k",
+        "variables": [{
+          "key": "zone_name"
+        }, {
+          "key": "size",
+          "default": 1024
+        }]
+      },
+      {
+        "key": "server",
+        "value": "##ip##:##port##",
+        "default_count": 4,
+        "variables": [{
+          "key": "ip"
+        }, {
+          "key": "port"
+        }]
+      }
+    ]
+  },
+  {
+    "category": "location",
+    "name": "define_cross_origin",
+    "_cls": "Function",
+    "is_enable": true,
+    "key": [{
+        "raw": "if ($request_method = 'OPTIONS') {"
+      },
+      {
+        "key": "add_header",
+        "value": "'Access-Control-Allow-Origin' '*' always"
+      },
+      {
+        "key": "add_header",
+        "value": "'Access-Control-Allow-Methods' 'GET,POST,OPTIONS,PUT,DELETE' always"
+      },
+      {
+        "key": "add_header",
+        "value": "'Access-Control-Allow-Headers' '*' always"
+      },
+      {
+        "key": "add_header",
+        "value": "'Access-Control-Max-Age' 1728000 always"
+      },
+      {
+        "key": "add_header",
+        "value": "'Content-Length' 0"
+      },
+      {
+        "key": "add_header",
+        "value": "'Content-Type' 'text/plain; charset=utf-8'"
+      },
+      {
+        "key": "return",
+        "value": "204"
+      },
+      {
+        "raw": "}"
+      },
+      {
+        "raw": "if ($request_method ~* '(GET|POST|DELETE|PUT)') {"
+      },
+      {
+        "key": "add_header",
+        "value": "'Access-Control-Allow-Origin' '*' always;"
+      },
+      {
+        "raw": "}"
+      }
+    ]
+  }
+]

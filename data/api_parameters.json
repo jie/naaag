@@ -1,0 +1,11 @@
+[{
+    "key": "error_page",
+    "_cls": "ApiParameter",
+    "is_enable": true
+  },
+  {
+    "key": "location",
+    "_cls": "ApiParameter",
+    "is_enable": true
+  }
+]

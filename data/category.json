@@ -1,0 +1,43 @@
+[
+
+  {
+    "key": "ssl",
+    "_cls": "Category",
+    "is_enable": true
+  },
+  {
+    "key": "gzip",
+    "_cls": "Category",
+    "is_enable": true
+  },
+  {
+    "key": "proxy",
+    "_cls": "Category",
+    "is_enable": true
+  },
+  {
+    "key": "log",
+    "_cls": "Category",
+    "is_enable": true
+  },
+  {
+    "key": "html",
+    "_cls": "Category",
+    "is_enable": true
+  },
+  {
+    "key": "upstream",
+    "_cls": "Category",
+    "is_enable": true
+  },
+  {
+    "key": "events",
+    "_cls": "Category",
+    "is_enable": true
+  },
+  {
+    "key": "site",
+    "_cls": "Category",
+    "is_enable": true
+  }
+]

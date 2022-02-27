@@ -1,0 +1,51 @@
+[{
+    "key": "proxy_pass",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "auth_request",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "log_format",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "access_log",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "error_log",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "rewrite",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "root",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "index",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "try_files",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+  {
+    "key": "internal",
+    "_cls": "LocationParameter",
+    "is_enable": true
+  },
+]

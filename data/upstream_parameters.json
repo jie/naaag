@@ -1,0 +1,11 @@
+[{
+    "key": "zone",
+    "_cls": "UpstreamParameter",
+    "is_enable": true
+  },
+  {
+    "key": "server",
+    "_cls": "UpstreamParameter",
+    "is_enable": true
+  }
+]

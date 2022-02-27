@@ -1,0 +1,103 @@
+[{
+    "code": 400,
+  "_cls": "ApiErrorCode",
+  "is_enable": true,
+    "message": "Bad request"
+  },
+  {
+    "code": 401,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Unauthorized"
+  },
+  {
+    "code": 403,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Forbidden"
+  },
+  {
+    "code": 404,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Resource not found"
+  },
+  {
+    "code": 405,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Method not allowed"
+  },
+  {
+    "code": 408,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Request timeout"
+  },
+  {
+    "code": 413,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Payload too large"
+  },
+  {
+    "code": 414,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Request URI too large"
+  },
+  {
+    "code": 415,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Unsupported media type"
+  },
+  {
+    "code": 426,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "HTTP request was sent to HTTPS port"
+  },
+  {
+    "code": 429,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "API rate limit exceeded"
+  },
+  {
+    "code": 495,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Client certificate authentication error"
+  },
+  {
+    "code": 496,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Client certificate not presented"
+  },
+  {
+    "code": 497,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "HTTP request was sent to mutual TLS port"
+  },
+  {
+    "code": 500,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Server error"
+  },
+  {
+    "code": 501,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Not implemented"
+  },
+  {
+    "code": 502,
+    "_cls": "ApiErrorCode",
+    "is_enable": true,
+    "message": "Bad gateway"
+  }
+]

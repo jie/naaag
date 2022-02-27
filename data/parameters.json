@@ -1,0 +1,442 @@
+[{
+    "key": "listen",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "8080",
+    "remark": "Server port"
+  },
+  {
+    "key": "server_name",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "localhost 127.0.0.1",
+    "remark": "Server port"
+  },
+  {
+    "key": "ssl",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "boolean",
+    "default": "off",
+    "remark": "SSL is enabled",
+    "category": "ssl"
+  },
+  {
+    "key": "ssl_certificate_key",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "",
+    "remark": "SSL certification key path",
+    "category": "ssl"
+  },
+  {
+    "key": "ssl_certificate",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "",
+    "remark": "SSL certification path",
+    "category": "ssl"
+  },
+  {
+    "key": "ssl_session_cache",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "shared:SSL:10m",
+    "remark": "SSL session cache",
+    "category": "ssl"
+  },
+  {
+    "key": "ssl_session_timeout",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "5m",
+    "remark": "SSL session timeout",
+    "category": "ssl"
+  },
+  {
+    "key": "ssl_ciphers",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "HIGH:!aNULL:!MD5",
+    "remark": "SSL ciphers",
+    "category": "ssl"
+  },
+  {
+    "key": "ssl_protocols",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "TLSv1.2 TLSv1.3",
+    "remark": "SSL protocals version",
+    "category": "ssl"
+  },
+  {
+    "key": "default_type",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "application/json",
+    "remark": "Default content type"
+  },
+  {
+    "key": "client_max_body_size",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "30m",
+    "remark": "upload file size"
+  },
+  {
+    "key": "keepalive_timeout",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "5",
+    "remark": "Keep alive timeout"
+  },
+  {
+    "key": "gzip",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "boolean",
+    "default": "on",
+    "remark": "Is open gzip",
+    "category": "gzip"
+  },
+  {
+    "key": "gzip_min_length",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "1k",
+    "remark": "Gzip min length",
+    "category": "gzip"
+  },
+  {
+    "key": "gzip_buffers",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "4 16k",
+    "remark": "Gzip buffers size",
+    "category": "gzip"
+  },
+  {
+    "key": "gzip_comp_level",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "2",
+    "remark": "Gzip comp level",
+    "category": "gzip"
+  },
+  {
+    "key": "gzip_types",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "application/x-javascript text/javascript application/javascript;",
+    "remark": "Gzip content type",
+    "category": "gzip"
+  },
+  {
+    "key": "gzip_vary",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "boolean",
+    "default": "off",
+    "remark": "Gzip vary",
+    "category": "gzip"
+  },
+  {
+    "key": "proxy_headers_hash_max_size",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "51200",
+    "remark": "Proxy headers hash max size",
+    "category": "proxy"
+  },
+  {
+    "key": "proxy_headers_hash_bucket_size",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "6400",
+    "remark": "Proxy headers hash bucket size",
+    "category": "proxy"
+  },
+
+  {
+    "key": "proxy_set_header",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "options",
+    "options": [{
+        "value": "X-Forwarded-For $proxy_add_x_forwarded_for"
+      },
+      {
+        "value": "X-Forwarded-Proto https"
+      },
+      {
+        "value": "Host $http_host"
+      },
+      {
+        "value": "Upgrade $http_upgrade"
+      },
+      {
+        "value": "Connection \"upgrade\""
+      },
+      {
+        "value": "X-real-ip $remote_addr"
+      },
+      {
+        "value": "Content-Length \"\""
+      }
+    ],
+    "remark": "Proxy header settings",
+    "category": "proxy",
+    "multiple": true
+  },
+  {
+    "key": "proxy_redirect",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "boolean",
+    "default": "off",
+    "remark": "Proxy redirect",
+    "category": "proxy"
+  },
+  {
+    "key": "proxy_http_version",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "1.1",
+    "remark": "Proxy http version",
+    "category": "proxy"
+  },
+  {
+    "key": "proxy_intercept_errors",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "boolean",
+    "default": "on",
+    "remark": "proxy error intercept",
+    "category": "proxy"
+  },
+  {
+    "key": "include",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "Include config file path",
+    "multiple": true
+  },
+  {
+    "key": "error_page",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "404 = @400",
+    "remark": "Error page"
+  },
+  {
+    "key": "log_format",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "main  '$remote_addr - $remote_user [$time_local] \"$request\" $status $body_bytes_sent \"$http_referer\" \"$http_user_agent\" \"$http_x_forwarded_for\"'",
+    "remark": "Log format",
+    "category": "log"
+  },
+  {
+    "key": "access_log",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "Access log file path",
+    "category": "log"
+  },
+  {
+    "key": "error_log",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "Error log file path",
+    "category": "log"
+  },
+  {
+    "key": "error_page",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "http API error code"
+  },
+  {
+    "key": "location",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "Location"
+  },
+  {
+    "key": "sendfile",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "booleaon",
+    "default": "on",
+    "remark": "Send file"
+  },
+  {
+    "key": "proxy_pass",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "",
+    "remark": "Proxy pass url",
+    "category": "proxy"
+  },
+  {
+    "key": "auth_request",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "",
+    "remark": "Auth request url"
+  },
+  {
+    "key": "rewrite",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "",
+    "remark": "Rewrite request url",
+    "options": [{
+        "remark": "normal",
+        "value": "^ /##location_path## last",
+        "variables": [{
+          "key": "location_path"
+        }]
+      },
+      {
+        "remark": "with args",
+        "value": "^(.*) /##location_path##/$1 last",
+        "variables": [{
+          "key": "location_path"
+        }]
+      }
+    ]
+  },
+  {
+    "key": "try_files",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "",
+    "remark": "Try proxy api as file"
+  },
+  {
+    "key": "root",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "html",
+    "remark": "Html root path",
+    "category": "html"
+  },
+  {
+    "key": "index",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "index.html index.htm",
+    "remark": "Html default index filename",
+    "category": "html"
+  },
+  {
+    "key": "server",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "Server setting",
+    "category": "upstream",
+    "multiple": true
+  },
+  {
+    "key": "zone",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "Zone setting for upstream",
+    "category": "upstream"
+  },
+  {
+    "key": "worker_connections",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "1024",
+    "remark": "Workers count",
+    "category": "events"
+  },
+  {
+    "key": "load_module",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "remark": "Workers count",
+    "category": "site"
+  },
+  {
+    "key": "user",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "nginx",
+    "remark": "User for nginx",
+    "category": "site",
+    "required": true
+  },
+  {
+    "key": "worker_processes",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "auto",
+    "remark": "Worker processes",
+    "category": "site"
+  },
+  {
+    "key": "pid",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": "/var/run/nginx.pid",
+    "remark": "PID file path",
+    "category": "site"
+  },
+  {
+    "key": "internal",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "string",
+    "default": null,
+    "remark": "Internal request required"
+  },
+  {
+    "key": "return",
+    "_cls": "Parameter",
+    "is_enable": true,
+    "type": "number",
+    "default": "204",
+    "remark": "Return http statues"
+  }
+]
